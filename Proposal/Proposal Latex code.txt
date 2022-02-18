@@ -1,0 +1,87 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+
+
+
+\title{Hostel Rental System}
+\author{Imtiaze Ahmed Nafi 2013178642,
+        Iftekhar Mahmud Alvi 2011922025}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Hostel is a pretty popular system of living in study life for most of the students, also for bachelors too. One of the main reasons of this being popular is that its very cheap. But unfortunately, all the way of renting hostels in this 2022 era is still very backwards. But we are here to change that with our hostel rental system website.
+
+\section{Objective}
+
+\begin{itemize}
+  \item To easily get to know about all the available hostels around 
+  \item Get to know the features of those hostels
+  \item Get to know the rent amount
+  \item Cab contact owner directly
+  \item Owner will also get to know that how many possible tenants are out there
+  \item Online booking system
+\end{itemize}
+
+\section{Target Customers}
+
+\begin{itemize}
+  \item Students and bachelors who are looking for a place to stay at a cheap price
+  \item Owners who wants to level up the hostel business
+\end{itemize}
+
+\section{Value Proposition}
+
+This website will reduce the bothering and time of going out and searching all the places contacting them individually etc. Hassle they face while searching for a hostel. Also it will reduce the time of printing physical advertisements for the owners and will save a lot of money too
+
+\section{Website Application Features and Description }
+
+This website is going to open a front page with a customers view. There will be buttons about available hostels around the area then  has created an account, he/she can:
+\begin{itemize}
+    \item Buy or book ticket.
+    \item Suggestion for alternative.
+    \item Access history of their past travels.
+    \item information related to the buses they will or have already traveled.
+    \item Notification for boarding bus.
+\end{itemize}
+
+On top right there will be log in or sign up for bus owners. They will be able to add their company to the database and see their progress. Once a bus Owner has created a profile, he/she can:
+
+\begin{itemize}
+    \item See the information of their bus, driver and maintenance.
+    \item weekly and monthly ranking of the bus.
+    \item Feedback of their service.
+    \item The current status of their bus.
+\end{itemize}
+
+\section{Tools and Resources}
+\begin{itemize}
+    \item Next.js
+    \item CSS
+    \item Node.js
+    \item Socket.io
+    \item mapbox API
+    \item MySQL
+    \item PHP
+\end{itemize}
+
+\section{Challenge}
+One of the biggest challenge is cost. As there will be a huge data like image, tracking bus and SMS for alert, there may be a chance of high cost maintenance. Second challenge will be the verification of data. We will need to check if the data entered are reliable or not. Although Bangladesh has started digital NID cards but to access the database will not be easy, many processing need to be done. UI also need to be simple and easy so that normal people can also use it. Lastly, connection or providing security for online payment will be difficult.
+
+
+\end{document}
