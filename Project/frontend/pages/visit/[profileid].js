@@ -29,7 +29,7 @@ function Profile() {
         setBasicUserInfo({
             id: "asdasd",
             name: "Abidur Rahman Khandakar Abir",
-            bio: "I am a chutiya, I am a proud Chutiya and lorem ipsum clum ssowrilal",
+            bio: "lorem ipsum clum ssowrilal",
             type: USERTYPE.LISTER,
             numberOfApartments: 4,
             livesIn: "Bashundhara, Dhaka",
