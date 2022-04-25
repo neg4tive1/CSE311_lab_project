@@ -1,0 +1,30 @@
+Instructions for contributors and authors.
+
+Changing in the main branch directly is not permissible.
+Use the github desktop toolkit if deemed necessary.
+Alternatively You can also use the git terminal.
+
+Steps: 
+create a branch "authorName_branchFunction"
+checkout (go to) the newly created branch.
+
+make changes based on given directives. (or your own vollition)
+
+* On being told: "main has changed" =>
+* Or just to be safe, from time to time =?
+
+checkout (go to) main branch (stash current work || commit beforehand)
+fetch origin main
+If main changed : pull from main
+
+then go branch name_function
+restore stash if stashed
+update from main
+commit changes
+publish curret branch
+create pull request
+
+For owner and contributors: 
+Review code from pull 
+and 
+merge with main if there is no conflict

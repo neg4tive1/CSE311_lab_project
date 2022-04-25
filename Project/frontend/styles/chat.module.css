@@ -1,0 +1,895 @@
+.invinsible {
+  visibility: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pc {
+  position: fixed;
+  visibility: visible;
+  z-index: 100;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pc img {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mobile {
+  position: fixed;
+  visibility: hidden;
+  z-index: -100;
+  font-family: "Montserrat", sans-serif;
+}
+
+.report_module {
+  border-top: 1px solid #00000050;
+  position: absolute;
+  top: 10%;
+  height: 90%;
+  width: 25%;
+  z-index: -100;
+  color: white;
+  background-color: #b8b8b8;
+  padding: 5px;
+}
+
+.report_warning {
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+.report_option_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20%;
+}
+
+.report_option {
+  height: fit-content;
+  width: 90%;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: blue;
+  display: grid;
+  place-items: center;
+  color: black;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(201, 201, 201);
+  border: 2px solid #00000050;
+
+}
+
+.show_report {
+  z-index: 150;
+}
+
+.chat_options_backdrop {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -100;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(199, 199, 199);
+}
+
+.backdrop_page_title_holder {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.backrop_page_title {
+  margin: 0;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 50%;
+  color: #000000;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+}
+
+.backdrop_top_bar {
+  height: 10%;
+  min-height: 10%;
+  max-height: 10%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-family: "Montserrat", sans-serif;
+}
+
+.option_close_button_holder {
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.option_close_button {
+  height: 6vh;
+  min-height: 6vh;
+  max-height: 6vh;
+  aspect-ratio: 1;
+  padding: 0px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.option_close_button img {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  aspect-ratio: 1;
+  min-width: 100%;
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.chat_page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #b8b8b8;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("../public/ChatBG.jpg");
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  background-color: #FBFBFB;
+}
+
+.chat_page::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0px;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(2px) brightness(93%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.chat_top_bar {
+  height: 10%;
+  width: 100%;
+  min-height: 10%;
+  max-height: 10%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top_bar_left {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  max-height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top_bar_left::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  height: 10%;
+  width: 25%;
+  backdrop-filter: blur(10px) brightness(80%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.home_button_holder {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home_button {
+  height: 6vh;
+  min-height: 6vh;
+  max-height: 6vh;
+  aspect-ratio: 1;
+  padding: 0px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home_button img {
+  height: 85%;
+  min-height: 85%;
+  max-height: 85%;
+  aspect-ratio: 1;
+  min-width: 85%;
+  max-width: 85%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.option_button_holder {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.option_button {
+  height: 6vh;
+  min-height: 6vh;
+  max-height: 6vh;
+  aspect-ratio: 1;
+  padding: 0px;
+  outline: none;
+  background-color: #00000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.option_button img {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  aspect-ratio: 1;
+  min-width: 100%;
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page_title_holder {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page_title {
+  margin: 0;
+  font-size: 150%;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  color: #000000;
+}
+
+.top_bar_right {
+  margin: 0;
+  display: grid;
+  height: 10%;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.thread_title {
+  font-size: 140%;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  color: #000000;
+}
+
+.chat_main {
+  height: 90%;
+  display: grid;
+  min-height: 90%;
+  max-height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  grid-template-columns: 1fr 3fr;
+  font-family: "Montserrat", sans-serif;
+}
+
+.chat_options {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.chat_options::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  z-index: -1;
+  height: 90%;
+  width: 25%;
+  backdrop-filter: blur(10px) brightness(80%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.option_container {
+  width: 100%;
+  height: 8%;
+  min-height: 8%;
+  max-height: 8%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.searchbar_container {
+  width: 100%;
+  height: 8%;
+  min-height: 8%;
+  max-height: 8%;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.searchbar {
+  max-height: 100%;
+  width: 95%;
+  color: black;
+  margin-bottom: 1px;
+  outline: none;
+  padding: 1.5%;
+  font-weight: 500;
+  font-size: large;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.chat_option_container {
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search_option {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: right;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.settings_option {
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: left;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search_option img {
+  height: 60%;
+  min-height: 60%;
+  max-height: 60%;
+  aspect-ratio: 1;
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.settings_option img {
+  height: 60%;
+  min-height: 60%;
+  max-height: 60%;
+  aspect-ratio: 1;
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.selected_option {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff60;
+}
+
+.search_context_holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 100%;
+  height: 5%;
+  min-height: 5%;
+  max-height: 5%;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search_context {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.context_paragraph {
+  font-size: 95%;
+  font-weight: 700;
+  color: #b8b8b8;
+  font-family: "Montserrat", sans-serif;
+}
+
+.selected_context {
+  font-family: "Montserrat", sans-serif;
+}
+
+.search_result_container {
+  width: 100%;
+  height: 79%;
+  min-height: 79%;
+  max-height: 100%;
+  overflow: auto;
+  font-display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search_result_container::-webkit-scrollbar {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search_result {
+  min-height: 10%;
+  max-width: 100%;
+  height: max-content;
+  display: grid;
+  z-index: 10;
+  grid-template-columns: 1fr 4fr;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  background: linear-gradient(to bottom,
+      rgb(201, 201, 201),
+      rgb(255, 255, 255));
+
+  cursor: pointer;
+}
+
+.mobile_chat_setting_image {
+  height: 40%;
+  min-height: 40%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.mobile_chat_setting_image img {
+  width: 50%;
+}
+
+.mobile_chat_setting_container {
+  height: 50%;
+  min-height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile_chat_setting {
+  min-height: 10%;
+  min-width: 90%;
+  max-width: 90%;
+  height: max-content;
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  grid-template-columns: 1fr 4fr;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(201, 201, 201);
+  border: #00000050 2px solid;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.context_profile_picture_container {
+  max-height: 100%;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.context_profile_picture_container img {
+  max-height: 90%;
+  max-width: 90%;
+  padding-left: 5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.context_threadname_container {
+  margin-left: 5%;
+  max-height: 100%;
+  max-width: 90%;
+  min-width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.goto_button_container {
+  max-height: 100%;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.goto_button_container img {
+  max-height: 90%;
+  max-width: 90%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.chat_feed {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.chat_list {
+  height: 80%;
+  min-height: 80%;
+  max-height: 80%;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.chat_list::-webkit-scrollbar {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.message_container {
+  width: 90%;
+  min-width: 90%;
+  max-width: 90%;
+  margin-top: 5px;
+  display: flex;
+  padding: 10px;
+  /* grid-template-columns: 1fr 1fr; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.self {
+  justify-content: right;
+  font-family: "Montserrat", sans-serif;
+}
+
+.message_container:hover {
+  font-family: "Montserrat", sans-serif;
+}
+
+.message_main {
+  width: max-content;
+  max-width: 60%;
+  order: 1;
+  background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(104, 104, 104));
+  box-shadow: 0px 0px 10px #a0a0a0, -0px -0px 10px #a0a0a0;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.message_space {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  order: 2;
+  font-family: "Montserrat", sans-serif;
+}
+
+.self .message_main {
+  order: 2;
+  width: max-content;
+  max-width: 60%;
+  background: linear-gradient(to bottom,
+      rgb(201, 201, 201),
+      rgb(255, 255, 255));
+  box-shadow: 0px 0px 10px #e6e6e6, -0px -0px 10px #e6e6e6;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.self .message_space {
+  order: 1;
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.message_header_container {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  min-height: min-content;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.message_metadata_holder {
+  max-width: 100%;
+  position: relative;
+  overflow-wrap: break-word;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile_name {
+  overflow-wrap: break-word;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+}
+
+.message {
+  padding: 5px;
+  min-height: min-content;
+  max-width: 100%;
+  font-size: medium;
+  line-height: 1;
+  margin-left: 5px;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  font-family: "Montserrat", sans-serif;
+}
+
+.chat_control_bar {
+  height: 20%;
+  width: 100%;
+  display: grid;
+  max-width: 100%;
+  min-height: 20%;
+  max-height: 20%;
+  grid-template-columns: 7fr 1fr;
+  font-family: "Montserrat", sans-serif;
+}
+
+.message_bar_holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  max-width: 100%;
+  place-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.message_bar {
+  max-height: 80%;
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.control_button_holder {
+  height: 100%;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.message_submit_button {
+  top: 50%;
+  padding: 10px;
+  color: #000000;
+  margin-left: 10px;
+  font-weight: bold;
+  position: absolute;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .pc {
+    position: fixed;
+    z-index: -100;
+    visibility: hidden;
+  }
+
+  .mobile {
+    position: fixed;
+    z-index: 100;
+    visibility: visible;
+  }
+
+  .report_module {
+    width: 100%;
+    background-color: rgb(201, 201, 201);
+    padding-top: 5%;
+  }
+
+  .chat_top_bar {
+    min-height: 10%;
+    max-height: 10%;
+    grid-template-columns: 1fr;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .top_bar_left {
+    min-height: 100%;
+    max-height: 100%;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .top_bar_right {
+    display: none;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .thread_title {
+    font-size: medium;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .chat_main {
+    grid-template-columns: 1fr;
+    min-height: 90%;
+    max-height: 90%;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .chat_options {
+    display: none;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .message_container {
+    width: 99%;
+    max-width: 99%;
+    min-width: 99%;
+  }
+
+  .message_main {
+    width: max-content;
+    max-width: 80%;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .self .message_main {
+    width: max-content;
+    max-width: 80%;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .self .message_space {
+    display: none;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .chat_control_bar {
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .message_submit_button {
+    padding: 8px;
+    margin-left: 8px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .option_button_holder {
+    z-index: 0;
+  }
+
+  .show_backdrop {
+    z-index: 100;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .page_title_holder {
+    display: grid;
+    place-items: center;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .top_bar_left::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    height: 0%;
+    width: 0%;
+    backdrop-filter: blur(0px) brightness(100%);
+    font-family: "Montserrat", sans-serif;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+/* initial style for all outputs */
+* {
+  box-sizing: border-box;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* initial style for html and body */
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: #FBFBFB;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.horizontal-slider {
+  display: relative;
+  left: 10%;
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-thumb {
+  cursor: pointer;
+  position: absolute;
+  background: black;
+  border-radius: 100%;
+  display: block;
+}
+
+.example-thumb.active {
+  background-color: black;
+}
+
+.example-track {
+  position: relative;
+  background: #00000030;
+}
+
+.example-track.example-track-0 {
+  background: #83a9ff;
+}
+
+.horizontal-slider .example-track {
+  height: 4px;
+}
+
+.horizontal-slider .example-thumb {
+
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
+}
+
+.Toastify {
+  position: absolute;
+}
+
+/* special global styles for react-input-emoji (external package) */
+/* needed for chat page emoji input  */
+/* :start */
+.react-input-emoji--container {
+  outline: none;
+  border-width: 0px;
+  word-break: break-all;
+  /*box-shadow: inset 0px 0px 0px 1px #888888;
+  -moz-box-shadow: inset 0px 0px 0px 1px #888888;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #888888; */
+}
+
+.react-emoji-picker--container {
+  float: right;
+  max-width: 15vw;
+  transform: translate(50vw, -3vh);
+  /* background-color: rgb(255, 0, 0); */
+}
+
+.react-emoji-picker .emoji-mart-light {
+  max-width: 320px;
+}
+
+.react-input-emoji--input {
+  max-height: 20px;
+  min-height: 20px;
+  color: #000000;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 20px;
+  word-break: break-all;
+  background-color: #ffffff;
+  box-shadow: inset 0px 0px 0px 1px #888888;
+  -moz-box-shadow: inset 0px 0px 0px 1px #888888;
+  -webkit-box-shadow: inset 0px 0px 0px 1px #888888;
+  z-index: 0;
+}
+
+.react-input-emoji--input::-webkit-scrollbar {
+  display: none;
+}
+
+.react-emoji-picker .emoji-mart {
+  background-color: #ffffff;
+  border: 1px solid #0c0c0c;
+}
+
+.react-emoji-picker .emoji-mart-search input {
+  width: 95%;
+  color: #000000;
+  margin-bottom: 1px;
+  background-color: #ffffff;
+
+}
+
+.react-emoji-picker .emoji-mart-search-icon {
+  display: none;
+}
+
+.react-emoji-picker .emoji-mart-search label {
+  background-color: #000000;
+}
+
+.react-emoji-picker .emoji-mart-category-label span {
+  color: #000000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.emoji-mart-anchor-icon {
+  color: rgb(0, 0, 0);
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+
+  .react-emoji-picker--container {
+    float: right;
+    max-width: 5vw;
+    transform: translateY(10px);
+    transform: translateX(90vw);
+    /* background-color: rgb(255, 0, 0); */
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  .react-emoji-picker--container {
+    max-width: 6vw;
+    transform: translateY(10px);
+    transform: translateX(99vw);
+    background-color: black;
+  }
+
+}
