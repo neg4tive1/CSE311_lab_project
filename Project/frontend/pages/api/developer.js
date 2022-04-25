@@ -2,5 +2,5 @@
 
 // changed the original Api handler
 export default function handler(req, res) {
-  res.status(200).json({ devOne: 'Md. Maruf Bin Salim Bhuiyan', devTwo: 'Farhan Tahmid' })
+  res.status(200).json({ devOne: 'Imtiaze Ahmed Nafi', devTwo: 'Alvy Mahmud' })
 }
